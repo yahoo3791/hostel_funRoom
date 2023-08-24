@@ -1,0 +1,93 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 100%;
+  height: 95vh;
+}
+@media (max-width: 768px) {
+  swiper-container {
+    height: 92vh;
+  }
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 110% !important;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+swiper-container::part(bullet) {
+  background-color: white;
+  opacity: 1;
+}
+
+swiper-container::part(bullet-active) {
+  background-color: black;
+}
+
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
+  color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: 100% 59%;
+  background-color: black;
+  opacity: 1;
+}
+
+swiper-container::part(button-prev) {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+swiper-container::part(button-next) {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
+}
+
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 5px;
+  top: auto;
+}
+
+swiper-container::part(button-next) {
+  right: auto;
+  margin-left: 12rem;
+}
+
+swiper-container::part(pagination) {
+  text-align: left;
+  padding-left: 5rem;
+  bottom: 3%;
+}/*# sourceMappingURL=homeswiper.css.map */

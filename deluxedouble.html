@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bs5 css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="./style/all.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./style/roomswiper.css">
+    <title>Booking</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 start-0 w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <h1>Fun<br>Room</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-md-4 active" aria-current="page" href="#">Single<br>Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-md-4" href="#">Deluxe Single<br>
+                            Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-md-4" href="#">Double<br>
+                            Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-md-4" href="#">Deluxe Double<br>
+                            Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-md-4" href="#">Twin<br>
+                            Room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-md-4" href="#">Deluxe<br>
+                            Twin Room</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container p-0 p-md-auto">
+        <div class="pic-item d-none d-md-flex overflow-hidden">
+            <img class="w-75 h-100 pe-1 pe-md-3" style="object-fit: cover;" src="./images/banner圖片.png" alt="">
+            <div class="d-flex flex-column">
+                <img class="w-100 h-50 pb-1 mb-md-3" style="object-fit: cover;" src="./images/banner圖片.png" alt="">
+                <img class="w-100 h-50" style="object-fit: cover;" src="./images/banner圖片.png" alt="">
+            </div>
+        </div>
+        <swiper-container class="d-block d-md-none">
+            <swiper-slide><img src="./images/banner圖片.png" alt=""></swiper-slide>
+            <swiper-slide><img src="./images/banner圖片.png" alt=""></swiper-slide>
+            <swiper-slide><img src="./images/banner圖片.png" alt=""></swiper-slide>
+        </swiper-container>
+        <div class="phone-toggle d-flex d-lg-none">
+            <a class="text-dark d-block w-50 text-center py-3 active" href="javascript:void(0)">房間介紹</a>
+            <a class="text-dark d-block w-50 text-center py-3" href="javascript:void(0)">房客評價(128)</a>
+        </div>
+        <div class="phone-onepage row mt-4 px-3 px-md-0">
+            <div class="col-12 col-lg-8">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="room-title my-3">Deluxe Double Room</h2>
+                    <div class="d-none d-lg-block">
+                        <a href="" class="text-dark" style="text-decoration: underline;">房客評價 (128)</a>
+                        <br>
+                        ******
+                    </div>
+                    <div class="room-money text-end mb-4 d-flex flex-column d-lg-none">
+                        <p class="d-inline-block fs-2 mb-4"><span class="fs-6">平日(週一 ~週四)</span><br>$2,888/日</p>
+                        <p class="d-inline-block fs-2"><span class="fs-6">假日(週五~週日)</span><br>$3,000/日</p>
+                    </div>
+                </div>
+                <p class="room-p mt-4">Single Room is only reserved for one guest. There is a bedroom with a single size
+                    bed and a private
+                    bathroom. Everything
+                    you need prepared for you: sheets and blankets, towels, soap and shampoo, hairdryer are provided. In
+                    the room there is
+                    AC and of course WiFi.</p>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6 mb-4">
+                        <h3 class="room-h3 mb-3">房間資訊</h3>
+                        <div class="row">
+                            <div class="col-6 my-2">人數限制</div>
+                            <div class="col-6 my-2">1</div>
+                            <div class="col-6 my-2">床型</div>
+                            <div class="col-6 my-2">單人床</div>
+                            <div class="col-6 my-2">衛浴數量</div>
+                            <div class="col-6 my-2">1</div>
+                            <div class="col-6 my-2">房間大小</div>
+                            <div class="col-6 my-2">18平方公尺</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <h3 class="room-h3 mb-3">入住/退房時間</h3>
+                        <div class="row">
+                            <div class="col-6 my-2">入住時間</div>
+                            <div class="col-6 my-2">15:00~21:00</div>
+                            <div class="col-6 my-2">退房時間</div>
+                            <div class="col-6 my-2">10:00 以前</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <h3 class="room-h3 mb-3">客房設施</h3>
+                    <div class="icon-block-outer">
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-wifi"></i>
+                            <p>wifi</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-utensils"></i>
+                            <p>早餐</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-martini-glass"></i>
+                            <p>Mini Bar</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-headphones"></i>
+                            <p>Room Service</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-phone-flip"></i>
+                            <p>電話</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-snowflake"></i>
+                            <p>空調</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-temperature-low"></i>
+                            <p>冰箱</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-couch"></i>
+                            <p>沙發</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-mountain"></i>
+                            <p>View</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-ban-smoking"></i>
+                            <p>禁止吸煙</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-child-reaching"></i>
+                            <p>適合兒童</p>
+                        </div>
+                        <div class="d-inline-block text-center icon-block">
+                            <i class="fs-3 pb-2 fa-solid fa-cat"></i>
+                            <p>寵物攜帶</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 my-auto">
+                <div class="text-end mb-4 d-none d-lg-block">
+                    <p class="d-inline-block fs-2 me-3"><span class="fs-6">平日(週一 ~週四)</span><br>$2,888/日</p>
+                    <p class="d-inline-block fs-2"><span class="fs-6">假日(週五~週日)</span><br>$3,000/日</p>
+                </div>
+                <div class="card-outer pt-4 pb-2 px-4 mb-4">
+                    <form action="">
+                        <label for="">
+                            姓名<br>
+                            <input class="mt-2 mb-3" type="text" name="" id="">
+                        </label>
+                        <label for="">
+                            聯絡電話<br>
+                            <input class="mt-2 mb-3" type="tel"></label>
+                        <label for="">
+                            E-mail<br>
+                            <input class="mt-2 mb-3" type="email"></label>
+                        <div class="d-flex">
+                            <div class="me-2 w-50">
+                                入住日期<br>
+                                <select class="mt-2 w-100" name="" id="">
+                                    <option value="">2022/02/02</option>
+                                </select>
+                            </div>
+                            <div class="w-50">
+                                入住日期<br>
+                                <select class="mt-2 w-100" name="" id="">
+                                    <option value="">2022/02/02</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="bg-dark text-white py-2 my-4 d-block w-100" type="submit">
+                            預約房間
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="phone-twopage pb-3 px-3 px-md-0">
+            <div class="text-end my-2 me-2">
+                <a class="d-inline-block text-dark py-2 px-3" style="text-decoration: underline;"
+                    href="javascript:void(0)">+ 我要給評</a>
+            </div>
+            <div class="comment-container">
+                <div class="mb-4">
+                    <div class="d-flex">
+                        <p class="username me-3">y****mst</p>
+                        <p>*****</p>
+                    </div>
+                    <p class="my-3">旅館服務人員很親切，離車站只要3~5分鐘。</p>
+                    <div>
+                        <div class="d-inline-block border rounded py-1 px-2">服務讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">清潔讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">衛生讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">安全讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">設施讚</div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex">
+                        <p class="username me-3">y****mst</p>
+                        <p>*****</p>
+                    </div>
+                    <p class="my-3">旅館服務人員很親切，離車站只要3~5分鐘。</p>
+                    <div>
+                        <div class="d-inline-block border rounded py-1 px-2">服務讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">清潔讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">衛生讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">安全讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">設施讚</div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex">
+                        <p class="username me-3">y****mst</p>
+                        <p>*****</p>
+                    </div>
+                    <p class="my-3">旅館服務人員很親切，離車站只要3~5分鐘。</p>
+                    <div>
+                        <div class="d-inline-block border rounded py-1 px-2">服務讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">清潔讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">衛生讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">安全讚</div>
+                        <div class="d-inline-block border rounded py-1 px-2">設施讚</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bs5 js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(".phone-twopage").hide();
+        $('.phone-toggle a:eq(1)').click(function () {
+            $(".phone-toggle a.active").addClass("changed");
+            $(".phone-onepage").hide();
+            $(".phone-twopage").show();
+        });
+        $('.phone-toggle a:eq(0)').click(function () {
+            $(".phone-toggle a.active").removeClass("changed");
+            $(".phone-twopage").hide();
+            $(".phone-onepage").show();
+        });
+    </script>
+</body>
+
+</html>

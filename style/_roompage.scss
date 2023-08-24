@@ -1,0 +1,71 @@
+.pic-item {
+    height: 70vh;
+}
+.room-title {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+        width: 50%;
+    }
+}
+.room-money {
+    @media (max-width: 768px) {
+        line-height: 1.6rem;
+    }
+}
+.room-p {
+    line-height: 1.7rem;
+    letter-spacing: 0.03rem;
+}
+.room-h3 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+
+}
+.icon-block-outer {
+    @media (min-width:768px) {
+        margin-left: -2.5rem;
+    }
+}
+.icon-block {
+    width: 10%;
+    min-height: 70px;
+    min-width: 120px;
+    height: auto;
+    margin: .5rem 0;
+    p {
+        white-space: nowrap;
+    }
+}
+.phone-toggle {
+    background: #F1F1F1;
+    position: relative;
+    margin-top: -10px;
+    a {
+        position: relative;
+    }
+    .active {
+        &::after {
+            content: "";
+            transition: all .3s;
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            border-bottom: 3px solid black;
+            border-radius: 5px;
+        }
+    }
+    .changed {
+        &::after {
+            transition: all .3s;
+            left: 110%;
+        }
+    }
+}
+.card-outer {
+    box-shadow: 0px 2px 5px #00000021;
+}
